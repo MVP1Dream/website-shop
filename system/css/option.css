@@ -1,0 +1,158 @@
+.text-main{
+    color: var(--main)!important;
+}
+.text-sec{
+    color: var(--sub)!important;
+}
+.text-font{
+    color: var(--font)!important;
+}
+.bg-main{
+  color: var(--font);
+    background-color: var(--main)!important;
+}
+.bg-main-gra{
+  color: var(--font);
+    background: linear-gradient(90deg , var(--main) 0%, var(--sub) 100%)!important;
+    border: none!important;
+}
+.border-main{
+    border: 2px solid var(--main);
+}
+.border-top-main{
+    border-top: 5px solid var(--main);
+}
+.border-main-gra{
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, var(--main) 0%, var(--sub) 100%);;
+    border-image-slice: 1;
+}
+.btn-up:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+.underline-active {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.underline-active::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--main);
+    transition: width .3s;
+}
+h4 {
+    width: 100%;
+    /* overflow: hidden;
+    white-space: nowrap; */
+    text-overflow: ellipsis;
+}
+.underline-active:hover::after {
+    width: 100%;
+}
+.wheel_hover{
+    transition: 0.3s ease-in-out;
+}
+.wheel_hover:hover {
+    transform:  scale(1.05);
+}
+*{
+    font-family: 'Kanit', sans-serif;
+}
+h1 , h2 , h3, h4 ,h5{
+    font-weight: 200;
+}
+hr{
+    border-top: 2px solid var(--main);
+    opacity: 1;
+}
+.banner{
+    background: url("<?php echo $config['bg'];?>");
+    background-position:  0% 25% ;
+    background-size: cover!important;
+    padding: 35px;
+    height: auto;
+}
+.not-dec{
+    text-decoration: none;
+}
+.bg-hallo{
+    background:  linear-gradient(180deg, rgba(51,54,62,0.9) 73%, rgba(88,93,106,0.6) 100%) , url("https://i.ibb.co/ct3xJRM/wallpapersden-com-batman-dark-theme-1920x1080.jpg");
+    background-size: cover!important;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+}
+.page-wrapper{
+    background-color: transparent; 
+    background-image: url(""); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+}
+.m-cent{
+    margin: 0% auto!important;
+}
+.text-strongest{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+.text-nav{
+    color: #c2c9da!important;
+}
+.border-pro{
+    background: #18243d;
+    border: 1px solid #000;
+}
+.border-spe{
+    background: #233458;
+    border: 1px solid #000;
+}
+.border-main{
+    border-color: var(--main)!important;
+}
+.bg-new-dark{
+    background-color: #18243d;
+}
+
+.top-spe{
+    border-top: 2px solid #000;
+}
+.bottom-spe{
+    border-bottom: 2px solid #000;
+}
+.btn-pro-hover:hover{
+    background-color: #233458!important;
+    color: var(--main);
+    transition: 0.4s;
+
+}
+@keyframes glow {
+    0%,
+    100% {
+        box-shadow: 0 0 10px 0 var(--sub-opa-50);
+        /* -webkit-box-shadow: 0 0 10px 0 rgba(231, 135, 27, 0.5); */
+    }
+    40%,
+    60% {
+        box-shadow: 0 0 30px 10px var(--sub-opa-25);
+        /* -webkit-box-shadow: 0 0 30px 10px rgba(231, 135, 27, 0.25); */
+    }
+}
+/* 992 */
+@media only screen and (max-width: 992px) {
+    .nav-item{
+        border-right: none!important;
+    }
+    .nav-item.first{
+        border-left: none!important;
+    }
+}
+.header-top{
+    background-color: var(--sub);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
