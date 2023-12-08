@@ -1,2 +1,2 @@
-https://www.youtube.com/watch?v=bgy6GOZCLhk \n
-https://discord.gg/bEyMzxRAx3
+สอน https://www.youtube.com/watch?v=bgy6GOZCLhk
+เครดิต https://discord.gg/bEyMzxRAx3
